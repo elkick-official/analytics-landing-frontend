@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+    url('../fonts/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary-font: 'Roboto';
+
+  --color-main: #172755;
+  --color-border: #465b95;
+  --color-dark-blue: #172755;
+  --color-pink: #ef2a82;
+  --color-secondary: #8794ba;
+  --color-white: #ffffff;
+
+  /* START FONTS SIZE */
+  --font-14: 14px;
+  --font-16: 16px;
+  --font-18: 18px;
+  --font-20: 20px;
+  --font-22: 22px;
+  --font-24: 24px;
+  --font-26: 26px;
+  --font-28: 28px;
+  --font-32: 3.2rem;
+  --font-36: 3.6rem;
+  --font-52: 5.2rem;
+  --font-80: 8rem;
+  /* END FONTS SIZE */
+
+  /* START FONTS WEIGHT */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  /* END FONTS WEIGHT */
+
+  --size-14: 14px;
+  --size-52: 5.2rem;
+  --size-36: 3.6rem;
+  --size-80: 8rem;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: var(--font-14);
+}
+
+dl,
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.custom-button {
+  padding: 10px var(--size-52);
+  outline: 0;
+  color: var(--color-secondary);
+  font-size: var(--font-16);
+}
+.custom-button:focus {
+  box-shadow: none;
+}
+.custom-button:hover {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  border: 1px solid var(--color-pink);
+}
+.text-decoration-underline {
+  text-decoration: underline;
+}
+.w-inherit {
+  width: inherit;
+}
+
+.header-section {
+  background-color: var(--color-dark-blue);
+  padding-top: 5rem;
+}
+.logo-wrapper {
+  max-width: 185px;
+}
+.logo-wrapper img {
+  object-fit: contain;
+}
+.header-left ul {
+  margin-left: var(--size-80);
+  padding: 10px;
+}
+.header-left ul li:not(:last-child) {
+  margin-right: var(--size-36);
+}
+.header-left ul li a {
+  color: var(--color-secondary);
+  font-size: var(--font-16);
+}
+.btn-border {
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+}
+.hero-left {
+  max-width: 550px;
+}
+.hero-right {
+  max-width: 580px;
+}
+.hero-right-image-wrapper {
+  padding: 46%;
+}
+.hero-right-image-wrapper img {
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
